@@ -1,0 +1,166 @@
+GPU Memory Track | 24-Jul-24-15:36:41 | Total Tensor Used Memory:15611.2Mb Total Allocated Memory:16349.0Mb
+
+
+ ******Before forward to ma_lmm****** At /home/ying/Projects/Multi_modal/MA-LMM/lavis/models/blip2_models/blip2_vicuna_instruct.py line 155: forward Total Tensor Used Memory:15611.2Mb Total Allocated Memory:16349.0Mb
+
++ | 64 * Size:(11008, 4096)        | Memory: 5504.0 M | <class 'torch.nn.parameter.Parameter'> | torch.float16
++ | 128 * Size:(4096, 4096)         | Memory: 4096.0 M | <class 'torch.nn.parameter.Parameter'> | torch.float16
++ | 32 * Size:(4096, 11008)        | Memory: 2752.0 M | <class 'torch.nn.parameter.Parameter'> | torch.float16
++ | 39 * Size:(1408, 6144)         | Memory: 643.5 M | <class 'torch.nn.parameter.Parameter'> | torch.float16
++ | 39 * Size:(6144, 1408)         | Memory: 643.5 M | <class 'torch.nn.parameter.Parameter'> | torch.float16
++ | 2 * Size:(32001, 4096)        | Memory: 500.01 M | <class 'torch.nn.parameter.Parameter'> | torch.float16
++ | 39 * Size:(4224, 1408)         | Memory: 442.40 M | <class 'torch.nn.parameter.Parameter'> | torch.float16
++ | 24 * Size:(768, 3072)          | Memory: 216.0 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
++ | 24 * Size:(3072, 768)          | Memory: 216.0 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
++ | 39 * Size:(1408, 1408)         | Memory: 147.46 M | <class 'torch.nn.parameter.Parameter'> | torch.float16
++ | 60 * Size:(768, 768)           | Memory: 135.0 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
++ | 2 * Size:(1, 3, 80, 224, 224) | Memory: 91.875 M | <class 'torch.Tensor'> | torch.float32
++ | 1 * Size:(30523, 768)         | Memory: 89.422 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
++ | 64 * Size:(1, 1, 2048, 128)    | Memory: 64.0 M | <class 'torch.Tensor'> | torch.float32
++ | 12 * Size:(768, 1408)          | Memory: 49.5 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
++ | 1 * Size:(4096, 768)          | Memory: 12.0 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
++ | 1 * Size:(1408, 3, 14, 14)    | Memory: 1.5791 M | <class 'torch.nn.parameter.Parameter'> | torch.float16
++ | 1 * Size:(512, 768)           | Memory: 1.5 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
++ | 1 * Size:(1, 257, 1408)       | Memory: 1.3803 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
++ | 236 * Size:(1408,)              | Memory: 1.2675 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
++ | 1 * Size:(120, 1408)          | Memory: 0.6445 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
++ | 182 * Size:(768,)               | Memory: 0.5332 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
++ | 65 * Size:(4096,)              | Memory: 0.5078 M | <class 'torch.nn.parameter.Parameter'> | torch.float16
++ | 39 * Size:(6144,)              | Memory: 0.4570 M | <class 'torch.nn.parameter.Parameter'> | torch.float16
++ | 24 * Size:(3072,)              | Memory: 0.2812 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
++ | 79 * Size:(1408,)              | Memory: 0.2121 M | <class 'torch.nn.parameter.Parameter'> | torch.float16
++ | 1 * Size:(1, 32, 768)         | Memory: 0.0937 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
++ | 1 * Size:(4096,)              | Memory: 0.0156 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
++ | 32 * Size:(64,)                | Memory: 0.0078 M | <class 'torch.Tensor'> | torch.float32
++ | 1 * Size:(1, 1, 1408)         | Memory: 0.0053 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
++ | 1 * Size:(1, 512)             | Memory: 0.0039 M | <class 'torch.Tensor'> | torch.int64
+GPU Memory Track | 24-Jul-24-15:36:41 | Total Tensor Used Memory:15611.2Mb Total Allocated Memory:16348.0Mb
+
+
+ ******Before forward to ma_lmm****** At /home/ying/Projects/Multi_modal/MA-LMM/lavis/models/blip2_models/blip2_vicuna_instruct.py line 155: forward Total Tensor Used Memory:15611.2Mb Total Allocated Memory:16348.0Mb
+
++ | 64 * Size:(11008, 4096)        | Memory: 5504.0 M | <class 'torch.nn.parameter.Parameter'> | torch.float16
++ | 128 * Size:(4096, 4096)         | Memory: 4096.0 M | <class 'torch.nn.parameter.Parameter'> | torch.float16
++ | 32 * Size:(4096, 11008)        | Memory: 2752.0 M | <class 'torch.nn.parameter.Parameter'> | torch.float16
++ | 39 * Size:(6144, 1408)         | Memory: 643.5 M | <class 'torch.nn.parameter.Parameter'> | torch.float16
++ | 39 * Size:(1408, 6144)         | Memory: 643.5 M | <class 'torch.nn.parameter.Parameter'> | torch.float16
++ | 2 * Size:(32001, 4096)        | Memory: 500.01 M | <class 'torch.nn.parameter.Parameter'> | torch.float16
++ | 39 * Size:(4224, 1408)         | Memory: 442.40 M | <class 'torch.nn.parameter.Parameter'> | torch.float16
++ | 24 * Size:(3072, 768)          | Memory: 216.0 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
++ | 24 * Size:(768, 3072)          | Memory: 216.0 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
++ | 39 * Size:(1408, 1408)         | Memory: 147.46 M | <class 'torch.nn.parameter.Parameter'> | torch.float16
++ | 60 * Size:(768, 768)           | Memory: 135.0 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
++ | 2 * Size:(1, 3, 80, 224, 224) | Memory: 91.875 M | <class 'torch.Tensor'> | torch.float32
++ | 1 * Size:(30523, 768)         | Memory: 89.422 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
++ | 64 * Size:(1, 1, 2048, 128)    | Memory: 64.0 M | <class 'torch.Tensor'> | torch.float32
++ | 12 * Size:(768, 1408)          | Memory: 49.5 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
++ | 1 * Size:(4096, 768)          | Memory: 12.0 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
++ | 1 * Size:(1408, 3, 14, 14)    | Memory: 1.5791 M | <class 'torch.nn.parameter.Parameter'> | torch.float16
++ | 1 * Size:(512, 768)           | Memory: 1.5 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
++ | 1 * Size:(1, 257, 1408)       | Memory: 1.3803 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
++ | 236 * Size:(1408,)              | Memory: 1.2675 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
++ | 1 * Size:(120, 1408)          | Memory: 0.6445 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
++ | 182 * Size:(768,)               | Memory: 0.5332 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
++ | 65 * Size:(4096,)              | Memory: 0.5078 M | <class 'torch.nn.parameter.Parameter'> | torch.float16
++ | 39 * Size:(6144,)              | Memory: 0.4570 M | <class 'torch.nn.parameter.Parameter'> | torch.float16
++ | 24 * Size:(3072,)              | Memory: 0.2812 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
++ | 79 * Size:(1408,)              | Memory: 0.2121 M | <class 'torch.nn.parameter.Parameter'> | torch.float16
++ | 1 * Size:(1, 32, 768)         | Memory: 0.0937 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
++ | 1 * Size:(4096,)              | Memory: 0.0156 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
++ | 32 * Size:(64,)                | Memory: 0.0078 M | <class 'torch.Tensor'> | torch.float32
++ | 1 * Size:(1, 1, 1408)         | Memory: 0.0053 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
++ | 1 * Size:(1, 512)             | Memory: 0.0039 M | <class 'torch.Tensor'> | torch.int64
+
+ ******Before forward to LLM****** At /home/ying/Projects/Multi_modal/MA-LMM/lavis/models/blip2_models/blip2_vicuna_instruct.py line 265: forward Total Tensor Used Memory:15739.9Mb Total Allocated Memory:17646.4Mb
+
++ | 24 * Size:(1, 1640, 768)       | Memory: 57.656 M | <class 'torch.Tensor'> | torch.float16
++ | 1 * Size:(1, 41, 257, 1408)   | Memory: 56.595 M | <class 'torch.Tensor'> | torch.float32
++ | 24 * Size:(1, 32, 3072)        | Memory: 4.5 M | <class 'torch.Tensor'> | torch.float16
++ | 3 * Size:(1, 257, 1408)       | Memory: 4.1411 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
++ | 3 * Size:(1, 257, 1408)       | Memory: 4.1411 M | <class 'torch.Tensor'> | torch.float32
++ | 20 * Size:(1, 32, 768)         | Memory: 1.875 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
++ | 20 * Size:(1, 32, 768)         | Memory: 1.875 M | <class 'torch.Tensor'> | torch.float32
++ | 14 * Size:(1, 40, 768)         | Memory: 1.6406 M | <class 'torch.Tensor'> | torch.float32
++ | 1 * Size:(1, 1, 257, 1408)    | Memory: 1.3803 M | <class 'torch.Tensor'> | torch.float32
++ | 24 * Size:(1, 8, 3072)         | Memory: 1.125 M | <class 'torch.Tensor'> | torch.float16
++ | 12 * Size:(1, 40, 12, 64)      | Memory: 0.7031 M | <class 'torch.Tensor'> | torch.float16
++ | 12 * Size:(1, 8, 768)          | Memory: 0.2812 M | <class 'torch.Tensor'> | torch.float32
++ | 6 * Size:(1, 32, 12, 64)      | Memory: 0.2812 M | <class 'torch.Tensor'> | torch.float16
++ | 1 * Size:(1, 257)             | Memory: 0.0019 M | <class 'torch.Tensor'> | torch.int64
++ | 12 * Size:(1, 1, 40)           | Memory: 0.0018 M | <class 'torch.Tensor'> | torch.float32
++ | 1 * Size:(1, 1, 257)          | Memory: 0.0009 M | <class 'torch.Tensor'> | torch.float32
++ | 1 * Size:(1, 40)              | Memory: 0.0003 M | <class 'torch.Tensor'> | torch.int64
++ | 1 * Size:(1, 32)              | Memory: 0.0002 M | <class 'torch.Tensor'> | torch.int64
++ | 4 * Size:(1, 8)               | Memory: 0.0002 M | <class 'torch.Tensor'> | torch.int64
++ | 1 * Size:(1,)                 | Memory: 7.6293 M | <class 'torch.Tensor'> | torch.int64
++ | 1 * Size:(1, 1)               | Memory: 7.6293 M | <class 'torch.Tensor'> | torch.int64
+- | 1 * Size:(1, 257, 1408)       | Memory: 1.3803 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
+- | 1 * Size:(1, 32, 768)         | Memory: 0.0937 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
+
+ ******Before forward to LLM****** At /home/ying/Projects/Multi_modal/MA-LMM/lavis/models/blip2_models/blip2_vicuna_instruct.py line 265: forward Total Tensor Used Memory:15739.9Mb Total Allocated Memory:17638.4Mb
+
++ | 24 * Size:(1, 1640, 768)       | Memory: 57.656 M | <class 'torch.Tensor'> | torch.float16
++ | 1 * Size:(1, 41, 257, 1408)   | Memory: 56.595 M | <class 'torch.Tensor'> | torch.float32
++ | 24 * Size:(1, 32, 3072)        | Memory: 4.5 M | <class 'torch.Tensor'> | torch.float16
++ | 3 * Size:(1, 257, 1408)       | Memory: 4.1411 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
++ | 3 * Size:(1, 257, 1408)       | Memory: 4.1411 M | <class 'torch.Tensor'> | torch.float32
++ | 20 * Size:(1, 32, 768)         | Memory: 1.875 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
++ | 20 * Size:(1, 32, 768)         | Memory: 1.875 M | <class 'torch.Tensor'> | torch.float32
++ | 14 * Size:(1, 40, 768)         | Memory: 1.6406 M | <class 'torch.Tensor'> | torch.float32
++ | 1 * Size:(1, 1, 257, 1408)    | Memory: 1.3803 M | <class 'torch.Tensor'> | torch.float32
++ | 24 * Size:(1, 8, 3072)         | Memory: 1.125 M | <class 'torch.Tensor'> | torch.float16
++ | 12 * Size:(1, 40, 12, 64)      | Memory: 0.7031 M | <class 'torch.Tensor'> | torch.float16
++ | 12 * Size:(1, 8, 768)          | Memory: 0.2812 M | <class 'torch.Tensor'> | torch.float32
++ | 6 * Size:(1, 32, 12, 64)      | Memory: 0.2812 M | <class 'torch.Tensor'> | torch.float16
++ | 1 * Size:(1, 257)             | Memory: 0.0019 M | <class 'torch.Tensor'> | torch.int64
++ | 12 * Size:(1, 1, 40)           | Memory: 0.0018 M | <class 'torch.Tensor'> | torch.float32
++ | 1 * Size:(1, 1, 257)          | Memory: 0.0009 M | <class 'torch.Tensor'> | torch.float32
++ | 1 * Size:(1, 40)              | Memory: 0.0003 M | <class 'torch.Tensor'> | torch.int64
++ | 4 * Size:(1, 8)               | Memory: 0.0002 M | <class 'torch.Tensor'> | torch.int64
++ | 1 * Size:(1, 32)              | Memory: 0.0002 M | <class 'torch.Tensor'> | torch.int64
++ | 1 * Size:(1,)                 | Memory: 7.6293 M | <class 'torch.Tensor'> | torch.int64
++ | 1 * Size:(1, 1)               | Memory: 7.6293 M | <class 'torch.Tensor'> | torch.int64
+- | 1 * Size:(1, 257, 1408)       | Memory: 1.3803 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
+- | 1 * Size:(1, 32, 768)         | Memory: 0.0937 M | <class 'torch.nn.parameter.Parameter'> | torch.float32
+
+ ******Forward to the LLM****** At /home/ying/Projects/Multi_modal/MA-LMM/lavis/models/blip2_models/blip2_vicuna_instruct.py line 324: forward Total Tensor Used Memory:15975.7Mb Total Allocated Memory:17938.1Mb
+
++ | 96 * Size:(1, 49, 11008)       | Memory: 98.765 M | <class 'torch.Tensor'> | torch.float16
++ | 65 * Size:(1, 49, 4096)        | Memory: 49.765 M | <class 'torch.Tensor'> | torch.float32
++ | 97 * Size:(1, 49, 4096)        | Memory: 37.132 M | <class 'torch.Tensor'> | torch.float16
++ | 96 * Size:(1, 32, 49, 128)     | Memory: 36.75 M | <class 'torch.Tensor'> | torch.float16
++ | 64 * Size:(1, 32, 49, 49)      | Memory: 9.3789 M | <class 'torch.Tensor'> | torch.float16
++ | 1 * Size:(1, 49, 32001)       | Memory: 2.9908 M | <class 'torch.Tensor'> | torch.float16
++ | 64 * Size:(1, 1, 49, 128)      | Memory: 0.7656 M | <class 'torch.Tensor'> | torch.float16
++ | 1 * Size:(1, 32, 4096)        | Memory: 0.25 M | <class 'torch.Tensor'> | torch.float16
++ | 65 * Size:(1, 49, 1)           | Memory: 0.0121 M | <class 'torch.Tensor'> | torch.float32
++ | 2 * Size:(1, 49)              | Memory: 0.0007 M | <class 'torch.Tensor'> | torch.int64
++ | 3 * Size:(1, 32)              | Memory: 0.0007 M | <class 'torch.Tensor'> | torch.int64
++ | 1 * Size:(48,)                | Memory: 0.0003 M | <class 'torch.Tensor'> | torch.int64
++ | 2 * Size:(1, 17)              | Memory: 0.0002 M | <class 'torch.Tensor'> | torch.int64
++ | 2 * Size:(1, 11)              | Memory: 0.0001 M | <class 'torch.Tensor'> | torch.int64
++ | 2 * Size:(1, 7)               | Memory: 0.0001 M | <class 'torch.Tensor'> | torch.int64
++ | 1 * Size:()                   | Memory: 7.6293 M | <class 'torch.Tensor'> | torch.int64
++ | 1 * Size:()                   | Memory: 3.8146 M | <class 'torch.Tensor'> | torch.float32
+- | 1 * Size:(1, 32)              | Memory: 0.0002 M | <class 'torch.Tensor'> | torch.int64
+
+ ******Forward to the LLM****** At /home/ying/Projects/Multi_modal/MA-LMM/lavis/models/blip2_models/blip2_vicuna_instruct.py line 324: forward Total Tensor Used Memory:16000.8Mb Total Allocated Memory:17953.9Mb
+
++ | 96 * Size:(1, 54, 11008)       | Memory: 108.84 M | <class 'torch.Tensor'> | torch.float16
++ | 65 * Size:(1, 54, 4096)        | Memory: 54.843 M | <class 'torch.Tensor'> | torch.float32
++ | 97 * Size:(1, 54, 4096)        | Memory: 40.921 M | <class 'torch.Tensor'> | torch.float16
++ | 96 * Size:(1, 32, 54, 128)     | Memory: 40.5 M | <class 'torch.Tensor'> | torch.float16
++ | 64 * Size:(1, 32, 54, 54)      | Memory: 11.390 M | <class 'torch.Tensor'> | torch.float16
++ | 1 * Size:(1, 54, 32001)       | Memory: 3.2960 M | <class 'torch.Tensor'> | torch.float16
++ | 64 * Size:(1, 1, 54, 128)      | Memory: 0.8437 M | <class 'torch.Tensor'> | torch.float16
++ | 1 * Size:(1, 32, 4096)        | Memory: 0.25 M | <class 'torch.Tensor'> | torch.float16
++ | 65 * Size:(1, 54, 1)           | Memory: 0.0133 M | <class 'torch.Tensor'> | torch.float32
++ | 2 * Size:(1, 54)              | Memory: 0.0008 M | <class 'torch.Tensor'> | torch.int64
++ | 3 * Size:(1, 32)              | Memory: 0.0007 M | <class 'torch.Tensor'> | torch.int64
++ | 1 * Size:(53,)                | Memory: 0.0004 M | <class 'torch.Tensor'> | torch.int64
++ | 2 * Size:(1, 22)              | Memory: 0.0003 M | <class 'torch.Tensor'> | torch.int64
++ | 2 * Size:(1, 16)              | Memory: 0.0002 M | <class 'torch.Tensor'> | torch.int64
++ | 2 * Size:(1, 7)               | Memory: 0.0001 M | <class 'torch.Tensor'> | torch.int64
++ | 1 * Size:()                   | Memory: 7.6293 M | <class 'torch.Tensor'> | torch.int64
++ | 1 * Size:()                   | Memory: 3.8146 M | <class 'torch.Tensor'> | torch.float32
+- | 1 * Size:(1, 32)              | Memory: 0.0002 M | <class 'torch.Tensor'> | torch.int64

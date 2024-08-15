@@ -43,7 +43,7 @@ class MemTracker(object):
         verbose(bool, default False): whether show the trivial exception
         device(int): GPU number, default is 0
     """
-    def __init__(self, detail=True, path='', verbose=False, device=0):
+    def __init__(self, detail=True, path='./memory_utils/record/', verbose=False, device=0):
         self.print_detail = detail
         self.last_tensor_sizes = set()
         self.gpu_profile_fn = path + f'{datetime.datetime.now():%d-%b-%y-%H:%M:%S}-gpu_mem_track.txt'
@@ -111,3 +111,49 @@ class MemTracker(object):
             f.write(f"\nAt {where_str:<50}"
                     f" Total Tensor Used Memory:{self.get_tensor_usage():<7.1f}Mb"
                     f" Total Allocated Memory:{self.get_allocate_usage():<7.1f}Mb\n\n")
+
+
+    def track_sort(self, msg):
+        """
+        Track the GPU memory usage
+        """
+        frameinfo = inspect.stack()[1]
+        where_str = frameinfo.filename + ' line ' + str(frameinfo.lineno) + ': ' + frameinfo.function
+
+        with open(self.gpu_profile_fn, 'a+') as f:
+
+            if self.begin:
+                f.write(f"GPU Memory Track | {datetime.datetime.now():%d-%b-%y-%H:%M:%S} |"
+                        f" Total Tensor Used Memory:{self.get_tensor_usage():<7.1f}Mb"
+                        f" Total Allocated Memory:{self.get_allocate_usage():<7.1f}Mb\n\n")
+                self.begin = False
+
+            f.write(f"\n ******{msg}****** At {where_str:<50}"
+                    f" Total Tensor Used Memory:{self.get_tensor_usage():<7.1f}Mb"
+                    f" Total Allocated Memory:{self.get_allocate_usage():<7.1f}Mb\n\n")
+            if self.print_detail is True:
+                ts_list = [(tensor.size(), tensor.dtype) for tensor in self.get_tensors()]
+                new_tensor_sizes = {(type(x),
+                                    tuple(x.size()),
+                                    ts_list.count((x.size(), x.dtype)),
+                                    np.prod(np.array(x.size()))*get_mem_space(x.dtype)/1024**2,
+                                    x.dtype) for x in self.get_tensors()}
+
+                # list(new_tensor_sizes).sort(reverse=True, key=lambda x:x[2]*x[3])
+
+                r0 = new_tensor_sizes - self.last_tensor_sizes
+                r0 = sorted(r0, reverse=True, key=lambda x:x[2]*x[3])
+                # for t, s, n, m, data_type in new_tensor_sizes - self.last_tensor_sizes:
+                for t, s, n, m, data_type in r0:
+                    f.write(f'+ | {str(n)} * Size:{str(s):<20} | Memory: {str(m*n)[:6]} M | {str(t):<20} | {data_type}\n')
+                
+                # r1: The tensor deleted from memory
+                r1 = self.last_tensor_sizes - new_tensor_sizes
+                r1 = sorted(r1, reverse=True, key=lambda x:x[2]*x[3])
+                # for t, s, n, m, data_type in self.last_tensor_sizes - new_tensor_sizes:
+                for t, s, n, m, data_type in r1: 
+                    f.write(f'- | {str(n)} * Size:{str(s):<20} | Memory: {str(m*n)[:6]} M | {str(t):<20} | {data_type}\n')
+
+                self.last_tensor_sizes = new_tensor_sizes 
+
+            
